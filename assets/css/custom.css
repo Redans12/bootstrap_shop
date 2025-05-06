@@ -1,3 +1,8 @@
+/* 
+   Custom CSS for Zero Shop E-commerce
+   This file contains all custom styles for product cards and shopping cart
+*/
+
 /* Reset de estilos para las tarjetas de productos */
 .product-wap .card {
     border: 1px solid #e9e9e9;
@@ -60,6 +65,12 @@
     justify-content: center;
     margin: 3px 0;
     font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.product-wap .card .product-overlay ul li .btn:hover {
+    background-color: #4a8f5c;
+    transform: scale(1.1);
 }
 
 /* Cuerpo de la tarjeta con información del producto */
@@ -134,4 +145,137 @@
 .pagination .page-item .page-link:hover {
     background-color: #59ab6e;
     color: white;
+}
+
+/* Cart Styles */
+.cart-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #59ab6e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+/* Cart page styles */
+.cart-table {
+    margin-bottom: 30px;
+}
+
+.cart-table th {
+    background-color: #f8f9fa;
+    font-weight: 500;
+    padding: 12px;
+}
+
+.cart-table td {
+    vertical-align: middle;
+    padding: 12px;
+}
+
+.cart-item-image {
+    max-width: 80px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.cart-item-name {
+    font-weight: 500;
+    color: #333;
+}
+
+.cart-summary {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.cart-summary h5 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.cart-summary hr {
+    margin: 10px 0;
+    border-color: #dee2e6;
+}
+
+.cart-total {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #59ab6e;
+}
+
+/* Empty cart message */
+.empty-cart-message {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.empty-cart-message i {
+    font-size: 5rem;
+    color: #dee2e6;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.empty-cart-message h3 {
+    font-weight: 500;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+/* Quantity controls */
+.input-group {
+    max-width: 120px;
+    margin: 0 auto;
+}
+
+.btn-quantity {
+    background-color: #f8f9fa;
+    border-color: #ced4da;
+    color: #495057;
+}
+
+.btn-quantity:hover {
+    background-color: #e9ecef;
+}
+
+.item-quantity {
+    text-align: center;
+    background-color: #fff;
+}
+
+/* Checkout button */
+#checkout-btn {
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#checkout-btn:hover {
+    background-color: #4a8f5c;
+    transform: translateY(-2px);
+}
+
+/* Shopping Cart Badge Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.cart-animation {
+    animation: pulse 0.5s ease-in-out;
 }

@@ -1,0 +1,123 @@
+/* Cart Styles */
+.cart-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #59ab6e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Cart page styles */
+.cart-item-image {
+    max-width: 80px;
+    height: auto;
+    margin-right: 15px;
+}
+
+/* Product card hover effect */
+.product-wap .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-wap .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart buttons */
+.add-to-cart-btn, .wishlist-btn, .view-product-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-to-cart-btn:hover, 
+.wishlist-btn:hover, 
+.view-product-btn:hover {
+    background-color: #4a8f5c;
+    transform: scale(1.1);
+}
+
+/* Cart page table styles */
+.cart-table th {
+    background-color: #f8f9fa;
+    font-weight: 500;
+}
+
+.cart-table .item-quantity {
+    width: 50px;
+    text-align: center;
+}
+
+.cart-summary {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.cart-total {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #59ab6e;
+}
+
+/* Empty cart message */
+.empty-cart-message {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.empty-cart-message i {
+    font-size: 5rem;
+    color: #dee2e6;
+    margin-bottom: 20px;
+}
+
+/* Checkout button */
+#checkout-btn {
+    transition: background-color 0.3s;
+}
+
+#checkout-btn:hover {
+    background-color: #4a8f5c;
+}
+
+/* Quantity controls */
+.item-quantity-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-btn {
+    border: 1px solid #ced4da;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    transition: background-color 0.2s;
+}
+
+.quantity-btn:hover {
+    background-color: #e9ecef;
+}
+
+.remove-item {
+    transition: color 0.2s;
+}
+
+.remove-item:hover {
+    color: #dc3545;
+}
